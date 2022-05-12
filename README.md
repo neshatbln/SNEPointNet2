@@ -5,9 +5,7 @@ for semantic segmentation of two types of concrete surface defects: spalls and c
 
 The code is tested under TensorFlow-GPU 1.15.1, Cuda 11.0, and python 3.6.
 
-The available dataset should be annotated into three classes spall, crack, and nodefect. 
-
-The raw data is stored in “bridge” and two empty folders “bridge_npy” and “bridge_npy_h5” are created to store numpy and h5 files, respectively.
+The raw data is stored in “bridge” folder and two empty folders “bridge_npy” and “bridge_npy_h5” are created to store numpy and h5 files, respectively.
 
 First, based on some given parameters (e.g., size of the block, stirde size) in indoor_3dutil.py, all the point clouds which are listed in 
 “/sem_seg/meta/anno_paths.txt”, are converted into *.npy format using collect_indoor3d_data.py. 
